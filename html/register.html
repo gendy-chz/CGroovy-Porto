@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Register</title>
+</head>
+<body>
+
+    
+    <!-- Form -->
+     <div class="form-container" id="formid">
+        <form action="home.html" >
+
+    
+            <h1>C'Groovy</h1>
+
+        <div class="input-control">
+            <label for="name">Nama</label>
+            <input id="name" type="text" placeholder="Nama" name="name"  class="textarea"  onchange="validate_username()" >
+            <div class="error" id="error-username"></div>
+        </div>
+        
+        <div class="input-control">
+            <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Email" name="email" class="textarea" onchange="validate_email()"  >
+        <div class="error" id="error-email"></div>
+        </div>
+        
+        <div class="input-control">
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Password" name="password" class="textarea" onchange="validate_password()" >
+            <div class="error" id="error-pass"></div>
+        </div>
+        
+        <div class="input-control">
+            <label for="age">Umur</label>
+            <input id="umur" type="number" placeholder="Umur" name="umur" class="textarea" onchange="validate_age()"> 
+            <div class="error" id="error-age"></div>
+        </div>
+        
+        <div class="input-control">
+            <div class="gender">
+                <label for="gender">Gender : </label>
+                <input type="radio"  name="gender" value="Laki-laki" onchange="validate_gender()">Laki-Laki
+                <input type="radio" name="gender" value="Perempuan" onchange="validate_gender()">Perempuan
+            </div>
+                <div class="error" id="error-gender"></div> 
+        </div>
+        
+        <button type="submit" class="but-submit">Register</button>
+        
+    
+        
+        
+    
+    </form>
+     </div>
+
+    
+    <script src="../js/register.js"></script>
+</body>
+</html>

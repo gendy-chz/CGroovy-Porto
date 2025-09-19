@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>C'Groovy Song Detail</title>
+  <link rel="stylesheet" href="../css/songdetail.css" />
+</head>
+<body>
+  
+  <!-- Navbar -->
+
+    <div class="nav-container">
+        <div class="nav-item">
+            <h2>C'Groovy</h2>
+        </div>
+
+        <div class="nav-item">
+            <input type="text" placeholder="Search" class="search">
+        </div>
+
+        <div class="nav-item"><a href="home.html" class="nav-link">Home</a></div>
+
+        <div class="dropdown">
+            <a href="songcollection.html" class="nav-link" id="pagenow">Song Collection</a>
+
+            <div class="dropdown-menu">
+                <a href="songcollection.html#pop" class="dropdown-link">Pop</a>
+                <a href="songcollection.html#rnb" class="dropdown-link" >R&B</a>
+                <a href="songcollection.html#kpop" class="dropdown-link">K-pop</a>
+            </div>
+        </div>
+
+        <div class="nav-item"><a href="aboutus.html" class="nav-link" >About Us</a></div>
+        <div class="nav-item"><a href="register.html" class="nav-link">Register</a></div>
+
+    </div>
+
+  <!-- Content -->
+    <div class="content">
+      <section class="song-detail" id="song-detail">
+      <div class="card">
+                <img src="" id="image" alt="">
+                
+                <div class="card-menu">
+                    <div class="card-name" id="song.name"></div>
+                    <div class="card-artist" id="song.artist"></div>
+                    <div class="card-desc" id="song.description"></div>
+                </div>
+            </div>
+      
+      <div class="lyrics">
+        
+        <p id="lyrics"></p>
+      </div>
+
+    
+      <div class="recommended">
+        <p class="youmight">You might also like</p>
+
+        <div class="rec-card">
+          <a href="songdetail.html?id=18"><img src="../assets/armageddon.jpeg" alt=""></a>
+          <div class="rec-card-desc">
+            <p>Armageddon</p>
+          <p>Aespa</p>
+          </div>
+          
+        </div>
+
+        <div class="rec-card">
+          <a href="songdetail.html?id=11"><img src="../assets/killbill.jpeg" alt=""></a>
+          <div class="rec-card-desc">
+            <p>Kill Bill</p>
+          <p>SZA</p>
+          </div>
+          
+        </div>
+
+        <div class="rec-card">
+          <a href="songdetail.html?id=16"><img src="../assets/magnetic.jpeg" alt=""></a>
+          <div class="rec-card-desc">
+            <p>Magnetic</p>
+          <p>ILLIT</p>
+          </div>
+          
+        </div>
+
+        <div class="rec-card">
+          <a href="songdetail.html?id=13"><img src="../assets/supershy.jpeg" alt=""></a>
+          <div class="rec-card-desc">
+            <p>Super Shy</p>
+          <p>New Jeans</p>
+          </div>
+          
+        </div>
+
+      </div>
+
+
+      </section>
+    </div>
+
+    <audio controls class="audio" >
+          <source src="" id="song.audio" type="audio/mpeg">
+          <audio>
+  
+  <script src="../js/songdetail.js"></script>
+</body>
+</html>
